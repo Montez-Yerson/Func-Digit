@@ -18,4 +18,8 @@ router.get('/bot',(req,res)=>{
     res.render('bot', {title: 'Charla con el bot'})
 })
 
+router.get('/catalogo',(req,res)=>{
+    res.render('catalogo', {title: 'Catálogo de productos'})
+})
+
 export default router
