@@ -2,7 +2,7 @@ import express from 'express'
 import { dirname, join} from 'path';
 import { fileURLToPath } from 'url';
 import router from './routes/index.js';
-import { Conectar } from './services/conexion.js';
+import { Conectar } from './public/services/conexion.js';
 
 const app= express()
 const __dirname= dirname(fileURLToPath(import.meta.url))

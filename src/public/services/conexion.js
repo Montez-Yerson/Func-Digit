@@ -20,3 +20,14 @@ export async function Conectar(){
         console.log(error)
     }
 }
+
+export async function ConsultarProductos(){
+    const cliente = new Client(config)
+    try{
+        await cliente.connect()
+        const resultado = await cliente.query('SELECT * FROM productos')
+        return resultado.rows
+    }catch(error){
+        console.log(error)
+    }
+}

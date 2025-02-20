@@ -9,5 +9,32 @@
 <body>
     <%- include('partials/navigation') %>
     <h1>Catálogo</h1>
+    <div id="mostrarProductos"></div>
+    <script>
+       async function getProductos() {
+            try{
+                const response = await fetch('http://localhost:3000/api/get-productos',{
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                const productos= await response.json();
+                const mostrarProductosDiv = document.getElementById('mostrarProductos');
+                productos.forEach(producto => {
+                    const productoDiv = document.createElement('div');
+                    productoDiv.innerHTML = `
+                        <h2>${producto.titulo}</h2>
+                        <p>${producto.descripcion}</p>
+                        <img src="${producto.url}" alt="${producto.titulo}">
+                    `;
+                    mostrarProductosDiv.appendChild(productoDiv);
+                });
+            }catch(error){
+                console.error(error);
+            }
+       }
+     getProductos();
+    </script>
 </body>
 </html>

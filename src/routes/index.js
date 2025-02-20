@@ -1,4 +1,5 @@
 import {Router} from 'express'
+import { ConsultarProductos } from '../public/services/conexion.js'
 
 const router = Router()
 
@@ -20,6 +21,11 @@ router.get('/bot',(req,res)=>{
 
 router.get('/catalogo',(req,res)=>{
     res.render('catalogo', {title: 'Catálogo de productos'})
+})
+
+router.get('/api/get-productos', async (req,res)=>{
+    const productos = await ConsultarProductos();
+    res.status(200).json(productos)
 })
 
 export default router
