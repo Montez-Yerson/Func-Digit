@@ -5,36 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <%- include('partials/head') %>
+    <!-- Asegúrate de incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <%- include('partials/navigation') %>
-    <h1>Catálogo</h1>
-    <div id="mostrarProductos"></div>
+    <h1 style="text-align: center;">Catálogo</h1>
+    <div id="mostrarProductos" class="container">
+        <div class="row" id="productosContainer">
+            <!-- Los productos se insertarán aquí -->
+        </div>
+    </div>
     <script>
        async function getProductos() {
-            try{
-                const response = await fetch('http://localhost:3000/api/get-productos',{
+            try {
+                const response = await fetch('http://localhost:3000/api/get-productos', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
                     }
                 });
-                const productos= await response.json();
-                const mostrarProductosDiv = document.getElementById('mostrarProductos');
+                const productos = await response.json();
+                const productosContainer = document.getElementById('productosContainer');
                 productos.forEach(producto => {
                     const productoDiv = document.createElement('div');
+                    productoDiv.className = 'col-md-4 mb-4'; // Ajusta el tamaño de la columna según sea necesario
                     productoDiv.innerHTML = `
-                        <h2>${producto.titulo}</h2>
-                        <p>${producto.descripcion}</p>
-                        <img src="${producto.url}" alt="${producto.titulo}">
+                        <div class="card" style="width: 18rem;">
+                            <img src="${producto.url}" class="card-img-top" alt="${producto.titulo}">
+                            <div class="card-body">
+                                <h5 class="card-title">${producto.titulo}</h5>
+                                <p class="card-text">${producto.descripcion}</p>
+                                <a href="https://api.whatsapp.com/send?phone=51976783049&text=Hola%20deseo%20comprar%20el%20plato" class="btn btn-primary">Comprar producto</a>
+                            </div>
+                        </div>
+
+                        
+                    </a>
                     `;
-                    mostrarProductosDiv.appendChild(productoDiv);
+                    productosContainer.appendChild(productoDiv);
                 });
-            }catch(error){
+            } catch (error) {
                 console.error(error);
             }
        }
-     getProductos();
+       getProductos();
     </script>
+   
 </body>
 </html>

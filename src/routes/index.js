@@ -28,4 +28,6 @@ router.get('/api/get-productos', async (req,res)=>{
     res.status(200).json(productos)
 })
 
+router.get('api/register')
+
 export default router
