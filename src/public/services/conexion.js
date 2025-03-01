@@ -1,5 +1,7 @@
 import pg from 'pg';
+import bcrypt from 'bcrypt';
 const {Client} =pg;
+
 
 const config={
     user: 'db_saboresoro_user',

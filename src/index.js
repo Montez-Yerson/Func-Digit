@@ -5,6 +5,7 @@ import router from './routes/index.js';
 import { Conectar } from './public/services/conexion.js';
 
 const app= express()
+app.use(express.json());
 const __dirname= dirname(fileURLToPath(import.meta.url))
 app.set('views', join(__dirname,'views'))
 app.set('view engine','ejs')
