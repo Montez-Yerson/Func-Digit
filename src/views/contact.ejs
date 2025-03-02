@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title><%= title %></title>
     <%- include('partials/head') %>
 </head>
 <body>
     <%- include('partials/navigation') %>
-    <h1>Contacto</h1>
+
+        <section class="contacto">
+            <div class="container">
+                <h2>📩 Contáctanos</h2>
+                <p>¿Tienes un proyecto en mente? Escríbenos y te responderemos lo antes posible.</p>
+    
+                <div class="contenido-contacto">
+                    <!-- Formulario de Contacto -->
+                    <form action="#" method="POST">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+    
+                    <!-- Información de Contacto -->
+                    <div class="info-contacto">
+                        <h3>📍 Información</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Ejemplo 123, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> Teléfono: +123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> Email: contacto@tudominio.com</p>
+    
+                        <!-- Redes Sociales -->
+                        <div class="redes">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+                <df-messenger intent="WELCOME" chat-title="FuncDigit" agent-id="cd95d3c0-d294-48ac-b75a-72caf5f70c87"
+                    language-code="es"></df-messenger>
+            </div>
+        </section>
+    
+    
 </body>
 </html>

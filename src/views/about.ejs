@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nosotros.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title><%= title %></title>
     <%- include('partials/head') %>
 </head>
 <body>
     <%- include('partials/navigation') %>
-    <h1>Sobre Nosotros</h1>
+    
+        <section class="sobre-nosotros">
+            <div class="container">
+                <h2>🌍 Sobre Nosotros</h2>
+                <p>En <strong>FuncDigit</strong>, nos especializamos en la creación de <strong>páginas web
+                        profesionales</strong>, adaptadas a las necesidades de cada cliente.</p>
+    
+                <div class="contenido">
+                    <div class="caja">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Nuestra Misión</h3>
+                        <p>Brindar soluciones digitales innovadoras y accesibles para que cualquier negocio pueda destacar
+                            en internet.</p>
+                    </div>
+                    <div class="caja">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser una empresa líder en desarrollo web, ofreciendo tecnología de vanguardia y experiencias
+                            digitales de alta calidad.</p>
+                    </div>
+                    <div class="caja">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Nuestros Valores</h3>
+                        <ul>
+                            <li>✔️ <strong>Compromiso</strong> – Nos enfocamos en ofrecer resultados de calidad.</li>
+                            <li>✔️ <strong>Innovación</strong> – Utilizamos herramientas modernas y eficaces.</li>
+                            <li>✔️ <strong>Transparencia</strong> – Comunicación clara y precios justos.</li>
+                            <li>✔️ <strong>Satisfacción del Cliente</strong> – Tu éxito es nuestra prioridad.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <a href="#contacto" class="btn">📩 Contáctanos</a>
+            </div>
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger intent="WELCOME" chat-title="FuncDigit" agent-id="cd95d3c0-d294-48ac-b75a-72caf5f70c87"
+                language-code="es"></df-messenger>
+        </section>
+    
+
 </body>
 </html>
