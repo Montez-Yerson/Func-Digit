@@ -13,5 +13,5 @@ app.use(router)
 app.use(express.static(join(__dirname,'public')))
 app.listen(3000)
 Conectar()
-console.log("El servidor está siendo escuchado en el puerto, 3000")
+console.log("El servidor está corriendo en el puerto, 3000")
 //middleware

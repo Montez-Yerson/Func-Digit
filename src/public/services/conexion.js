@@ -4,10 +4,10 @@ const {Client} =pg;
 
 
 const config={
-    user: 'db_saboresoro_user',
-    password: 'ZUJHvlLt6ZlvXNO9WVh47t5NEKOBbnWO',
-    database: 'db_saboresoro',
-    host: 'dpg-cur85etds78s73buhl0g-a.oregon-postgres.render.com',
+    user: 'yerson_user',
+    password: 'l2DVTHgkYCVukRWricqG0rJfzO6ykork',
+    database: 'yerson',
+    host: 'dpg-cv0c4kbqf0us7395gmh0-a.oregon-postgres.render.com',
     port: 5432,
     ssl:{
         rejectUnauthorized: false

@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link rel="stylesheet" href="./css/fondo.css" />
     <title>Restaurant</title>
 
     <%- include('partials/head') %>
@@ -13,21 +14,23 @@
   </head>
   <body id="main-body">
     <%- include('partials/navigation') %>
-    <!-- Content -->
-    <div class="banner">
-      <div class="banner-body">
-        <h3 class="text-uppercase">Bienvenido a SABORES DE ORO</h3>
-        <p>
-          Los mejores platos y bebidas que encontrarás en el Perú
-        </p>
-        <a href="menu.html" class="btn btn-warning"
-          ><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a
-        >
+      <!-- Contenido -->
+      <div class="banner">
+        <div class="banner-body">
+          <h3 class="text-uppercase">Bienvenido a FuncDigit</h3>
+          <p>
+            <h2>Somos expertos en la creación de páginas web profesionales,
+            adaptadas a tus necesidades. Desde sitios estáticos hasta
+            plataformas dinámicas, te ayudamos a establecer tu
+            presencia en línea con diseños modernos y funcionales.</h2>
+          </p>
+          <a href="menu.html" class="btn btn-warning">
+            <i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menú
+          </a>
+        </div>
       </div>
-    </div>
-    
     <!-- imágenes -->
-    <img src="./img/banner_1.jpg" alt="banner" class="banner">
+    
 
     <div class="container container-web-page">
       <h3 class="text-center text-uppercase poppins-regular font-weight-bold">
@@ -40,13 +43,18 @@
           <h5
             class="text-center text-uppercase poppins-regular font-weight-bold"
           >
-            Envíos a domicilio
+            Páginas Web Estáticas
           </h5>
           <p class="text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ad
-            possimus modi repellendus? Expedita, vitae rerum at aliquam eligendi
-            soluta veniam ut dolor facere fugiat quod, maxime ad accusamus
-            quisquam.
+            Son sitios web compuestos por HTML, CSS y JavaScript 
+            sin cambios en tiempo real. Ideales para empresas 
+            que necesitan una
+            presencia en línea sin funciones interactivas.
+
+            <br>✅ Ventajas:
+            <br>✔️ Rápidas y de carga ligera.
+            <br>✔️ Más económico y fácil de mantener.
+            <br>✔️ Perfectas para portafolios, blogs personales o páginas informativas.
           </p>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
@@ -54,13 +62,17 @@
           <h5
             class="text-center text-uppercase poppins-regular font-weight-bold"
           >
-            Ventas al por mayor
+            Páginas Web Dinámicas
           </h5>
           <p class="text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ad
-            possimus modi repellendus? Expedita, vitae rerum at aliquam eligendi
-            soluta veniam ut dolor facere fugiat quod, maxime ad accusamus
-            quisquam.
+            Sitios web que permiten interacción con los usuarios 
+            mediante bases de 
+            datos y tecnologías avanzadas como Node.js, PHP o
+            Python. Ideales para empresas que requieren funcionalidad personalizada.
+            <br>✅ Ventajas:
+            <br>✔️ Interacción con usuarios y contenido dinámico.
+            <br>✔️ Integración con bases de datos.
+            <br>✔️ Perfectas para tiendas en línea, sistemas de reservas o redes sociales.
           </p>
         </div>
         <div class="col-12 col-sm-6 col-md-4">
@@ -68,13 +80,16 @@
           <h5
             class="text-center text-uppercase poppins-regular font-weight-bold"
           >
-            Reservaciones de local
+            📊 Comparación entre Páginas Estáticas y Dinámicas
           </h5>
           <p class="text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ad
-            possimus modi repellendus? Expedita, vitae rerum at aliquam eligendi
-            soluta veniam ut dolor facere fugiat quod, maxime ad accusamus
-            quisquam.
+          Característica Páginas estáticas Páginas dinámicas
+          Velocidad ⭐⭐⭐⭐☆ (Rápidas) 
+          ⭐⭐⭐☆☆ (Depende del servidor)
+          Costo ⭐⭐⭐⭐⭐ (Económicas) ⭐⭐☆☆☆ (Más inversión)
+          Mantenimiento ⭐⭐⭐⭐⭐ (Fácil) ⭐⭐⭐☆☆ (Requiere actualizaciones)
+          Interactividad ⭐☆☆☆☆ (Baja) ⭐⭐⭐⭐⭐ (Alta)
+          Uso recomendado Portafolios, blogs Tiendas en línea, plataformas web
           </p>
         </div>
       </div>
@@ -84,27 +99,28 @@
 
     <div class="container-fluid container-web-page">
       <h3 class="text-center text-uppercase poppins-regular font-weight-bold">
-        Nuestros platillos más populares
+        🌍 Páginas Web Más Populares
       </h3>
       <div class="container-cards full-box mb-4">
         <div class="card-product div-bordered bg-white shadow-2">
           <figure class="card-product-img">
             <img
               class="img-fluid"
-              src="./assets/platillos/platillo.jpg"
+              src="./img/sitioinfor.jpg"
               alt="nombre_platillo"
             />
           </figure>
           <div class="card-product-body">
             <div class="card-product-content">
               <h5 class="text-center fw-bolder">
-                Nombre completo del platillo con limite de caracteres
+                Sitios Informativos
               </h5>
               <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
               <span
                 class="full-box text-center text-muted"
                 style="display: block"
-                >En stock</span
+                >Ofrecen contenido educativo o noticias sin necesidad 
+                de interacción del usuario, como Mozilla.org.</span
               >
             </div>
             <div
@@ -133,20 +149,22 @@
           <figure class="card-product-img">
             <img
               class="img-fluid"
-              src="./assets/img/img_not_found.jpg"
+              src="./img/landing.jpg"
               alt="nombre_platillo"
             />
           </figure>
           <div class="card-product-body">
             <div class="card-product-content">
               <h5 class="text-center fw-bolder">
-                Nombre completo del platillo con limite de caracteres
+                Landing Pages
               </h5>
               <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
               <span
                 class="full-box text-center text-muted"
                 style="display: block"
-                >En stock</span
+                >Páginas de una sola sección diseñadas para 
+                promocionar un producto o captar clientes
+                 potenciales.</span
               >
             </div>
             <div
@@ -178,20 +196,22 @@
           <figure class="card-product-img">
             <img
               class="img-fluid"
-              src="./assets/platillos/platillo.jpg"
-              alt="nombre_platillo"
-            />
+              src="./img/tiendalinea.png"
+              alt="nombre_platillo"/>
           </figure>
           <div class="card-product-body">
             <div class="card-product-content">
               <h5 class="text-center fw-bolder">
-                Nombre completo del platillo con limite de caracteres
+                Tiendas en Línea
               </h5>
               <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
               <span
                 class="full-box text-center text-muted"
                 style="display: block"
-                >En stock</span
+                >Permiten la compra y venta de productos con 
+                funcionalidades como carritos de compra y 
+                pagos en línea, ejemplos: Amazon,
+                MercadoLibre .</span
               >
             </div>
             <div
@@ -220,20 +240,21 @@
           <figure class="card-product-img">
             <img
               class="img-fluid"
-              src="./assets/img/img_not_found.jpg"
+              src="./img/sisacad.png"
               alt="nombre_platillo"
             />
           </figure>
           <div class="card-product-body">
             <div class="card-product-content">
               <h5 class="text-center fw-bolder">
-                Nombre completo del platillo con limite de caracteres
+                Plataformas de Aprendizaje
               </h5>
               <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
               <span
                 class="full-box text-center text-muted"
                 style="display: block"
-                >En stock</span
+                >Ofrecen cursos en línea con materiales interactivos
+                 y certificaciones, ejemplos: Udemy, Coursera .</span
               >
             </div>
             <div
@@ -259,8 +280,69 @@
               </button>
             </div>
           </div>
+
+
         </div>
+        <div class="card-product div-bordered bg-white shadow-2">
+          <figure class="card-product-img">
+            <img class="img-fluid" src="./img/blog.jpg" alt="nombre_platillo" />
+          </figure>
+          <div class="card-product-body">
+            <div class="card-product-content">
+              <h5 class="text-center fw-bolder">
+                Foros y Blogs Interactivos
+              </h5>
+              <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+              <span class="full-box text-center text-muted" style="display: block">Espacios donde los usuarios 
+                pueden publicar, comentar
+                 e interactuar con contenido, ejemplos: WordPress, Reddit .</span>
+            </div>
+            <div class="text-center card-product-options" style="padding: 10px 0">
+              <button type="button" class="btn btn-link btn-sm btn-rounded text-success">
+                <i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar
+              </button>
+              &nbsp; &nbsp;
+              <a href="details.html" class="btn btn-link btn-sm btn-rounded"><i class="fas fa-box-open fa-fw"></i> &nbsp;
+                Detalles</a>
+              &nbsp; &nbsp;
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                <i class="fas fa-heart fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-product div-bordered bg-white shadow-2">
+          <figure class="card-product-img">
+            <img class="img-fluid" src="./img/reserva.png" alt="nombre_platillo" />
+          </figure>
+          <div class="card-product-body">
+            <div class="card-product-content">
+              <h5 class="text-center fw-bolder">
+                Sistemas de Reservas
+              </h5>
+              <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+              <span class="full-box text-center text-muted" style="display: block">Permiten a los usuarios 
+                agendar citas o reservar hospedaje y 
+                vuelos en línea, ejemplo: Booking.com .</span>
+            </div>
+            <div class="text-center card-product-options" style="padding: 10px 0">
+              <button type="button" class="btn btn-link btn-sm btn-rounded text-success">
+                <i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar
+              </button>
+              &nbsp; &nbsp;
+              <a href="details.html" class="btn btn-link btn-sm btn-rounded"><i class="fas fa-box-open fa-fw"></i> &nbsp;
+                Detalles</a>
+              &nbsp; &nbsp;
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                <i class="fas fa-heart fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
+      
+      
       <p class="text-center">
         <a href="menu.html" class="btn btn-primary"
           ><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a
@@ -307,7 +389,7 @@
             <ul class="list-unstyled">
               <li>
                 <h5 class="font-weight-bold">
-                  <i class="far fa-copyright"></i> Carlos Alfaro 2021
+                  <i class="far fa-copyright"></i> Yerson Montez Quispe 2025
                 </h5>
               </li>
               <li>Todos los derechos reservados</li>
@@ -315,10 +397,9 @@
           </div>
           <div class="col-12 col-md-4">
             <ul class="list-unstyled">
-              <li><h5 class="font-weight-bold">El Salvador</h5></li>
+              <li><h5 class="font-weight-bold">Huncavelica</h5></li>
               <li>
-                <i class="fas fa-map-marker-alt fa-fw"></i> San Salvador, El
-                Salvador, Centro América
+                <i class="fas fa-map-marker-alt fa-fw"></i> Huancavelica, Perú
               </li>
             </ul>
           </div>
@@ -327,7 +408,7 @@
               <li><h5 class="font-weight-bold">Siguenos en:</h5></li>
               <li>
                 <a
-                  href="https://es-la.facebook.com/CarlosAlfaroES/"
+                  href="https://es-la.facebook.com/CarlosAlfaroESyS/"
                   class="footer-link"
                   target="_blank"
                 >

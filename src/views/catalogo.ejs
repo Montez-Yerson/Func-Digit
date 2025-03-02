@@ -19,7 +19,7 @@
     <script>
        async function getProductos() {
             try {
-                const response = await fetch('https://saboresdeoro.onrender.com/api/get-productos', {
+                const response = await fetch('http://localhost:3000/api/get-productos', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
@@ -32,9 +32,9 @@
                     productoDiv.className = 'col-md-4 mb-4'; // Ajusta el tamaño de la columna según sea necesario
                     productoDiv.innerHTML = `
                         <div class="card" style="width: 18rem;">
-                            <img src="${producto.url}" class="card-img-top" alt="${producto.titulo}">
+                            <img src="${producto.imagen_url}" class="card-img-top" alt="${producto.nombre}">
                             <div class="card-body">
-                                <h5 class="card-title">${producto.titulo}</h5>
+                                <h5 class="card-title">${producto.nombre}</h5>
                                 <p class="card-text">${producto.descripcion}</p>
                                 <a href="https://api.whatsapp.com/send?phone=51976783049&text=Hola%20deseo%20comprar%20el%20plato" class="btn btn-primary">Comprar producto</a>
                             </div>

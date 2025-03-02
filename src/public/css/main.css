@@ -94,7 +94,7 @@ body,html{
 	margin: 0;
 }
 .header{
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	border-bottom: 1px solid rgba(235, 135, 135, 0.1);
 	position: relative;
 	color: var(--text-color);
 	display: flex;
@@ -189,63 +189,92 @@ body,html{
 }
 .popup-login::before{
 	border-color: rgba(194, 225, 245, 0);
-	border-bottom-color: #ccc;
+	border-bottom-color: #be2d2d;
 	border-width: 9px;
 	margin-right: -1px;
 }
 
 /*Estilos del banner*/
-.banner{
-	height: calc(100vh - var(--header-height));	
+/* Estilos del banner */
+.banner {
+	height: calc(100vh - var(--header-height));
 	position: relative;
-	background-position: center;
-	background-image: url('/img/banner_1.jpg');
+	background-image: url('/img/copia.jpg');
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	animation: banner 15s infinite linear;
+	overflow: hidden;
 }
-.banner-body{
+
+/* Capa semitransparente sobre la imagen */
+/* Estilos del banner */
+.banner {
+	height: calc(100vh - var(--header-height));
+	position: relative;
+	background-image: url('/img/copia.jpg');
+	background-size: contain;
+	/* Ajusta la imagen completa sin recortarla */
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+/* Capa oscura para mejorar la visibilidad del texto */
+.banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenido dentro del banner */
+.banner-body {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
-	color: #FFF;
-	font-family: 'poppinsregular';
+	width: 100%;
+	color: #f8f5f5;
+	font-family: 'Poppins', sans-serif;
 	text-align: center;
+	padding: 20px;
 }
-.banner::before{
-	content    : "";
-	background : #000000; 
-	position   : absolute;
-	width      : 100%;
-	height     : 100%;
-	opacity    : 0.4; 
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+	.banner {
+		background-size: contain;
+		/* Mantiene la imagen completa sin recortes */
+		background-position: center center;
+	}
 }
-@keyframes banner{
-	0%{
-		background-image: url('../assets/img/banner_1.jpg');
-	}
-	33%{
-		background-image: url('../assets/img/banner_1.jpg');
-	}
+@keyframes banner {
 
-
-	34%{
-		background-image: url('../assets/img/banner_2.jpg');
+	0%,
+	32% {
+		background-image: url('/img/cafeteria.jpeg');
 	}
-	66%{
-		background-image: url('../assets/img/banner_2.jpg');
+	33% {
+		background-image: url('/img/ropa.jpg');
 	}
-
-
-	67%{
-		background-image: url('../assets/img/banner_3.jpg');
+	34% {
+		background-image: url('/img/tiendaAu.jpeg');
 	}
-	100%{
-		background-image: url('../assets/img/banner_3.jpg');
+	35% {
+		background-image: url('/img/pasteleria.jpeg');
 	}
-
+	100% {
+		background-image: url('/img/corte.jpeg');
+	}
 }
 
 /* Footer */
