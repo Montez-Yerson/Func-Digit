@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #3399c9;
+    background-color: #b9babb;
 }
 
 /* Sección de Contacto */
 .contacto {
     text-align: center;
     padding: 60px 20px;
-    background-color: #8bbddf;
+    background-color: #a8a8a8;
 }
 
 .container {
@@ -39,10 +39,10 @@ p {
 /* Formulario */
 form {
     width: 48%;
-    background: #7fade9;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(138, 214, 148, 0.1);
 }
 
 .campo {
@@ -52,14 +52,14 @@ form {
 
 .campo label {
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 .campo input,
 .campo textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #757575;
     border-radius: 5px;
     margin-top: 5px;
 }
@@ -69,8 +69,8 @@ form {
     display: inline-block;
     width: 100%;
     padding: 12px;
-    background: #007bff;
-    color: rgb(189, 41, 41);
+    background: #9acf93;
+    color: rgb(241, 47, 47);
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -80,14 +80,14 @@ form {
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #b5cde7;
 }
 
 /* Información de Contacto */
 .info-contacto {
     width: 48%;
     text-align: left;
-    background: #7fade9;
+    background: #b9cee9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ form {
 }
 
 .info-contacto i {
-    color: #007bff;
+    color: #2acec6;
     margin-right: 10px;
 }
 
